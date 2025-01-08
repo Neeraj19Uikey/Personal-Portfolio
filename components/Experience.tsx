@@ -10,9 +10,10 @@ const Experience = () => {
         My <span className="text-purple">work experience</span>
       </h1>
 
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+      <div className="w-full mt-12 grid justify-center gap-10">
         {workExperience.map((card) => (
           <Button
+            
             key={card.id}
             //   random duration will be fun , I think , may be not
             duration={Math.floor(Math.random() * 10000) + 10000}
@@ -27,7 +28,7 @@ const Experience = () => {
               borderRadius: `calc(1.75rem* 0.96)`,
             }}
             // remove bg-white dark:bg-slate-900
-            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-default"
           >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
               <img
